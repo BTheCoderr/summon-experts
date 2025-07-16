@@ -25,8 +25,11 @@ After creating, you'll get:
 
 Replace the placeholder in `src/App.jsx`:
 ```jsx
-<div className="g-recaptcha" data-sitekey="YOUR_ACTUAL_SITE_KEY_HERE"></div>
+<div className="g-recaptcha" data-sitekey="6Lf0olUrAAAAADMWq6cNmTTThsobiZkPVQOQO4rTgO"></div>
 ```
+
+**Current Site Key:** `6Lf0olUrAAAAADMWq6cNmTTThsobiZkPVQOQO4rTgO`
+**Current Secret Key:** `6Lf0olUrAAAAAPulmBbOZAhXe2vuJptlDnX_7HCd`
 
 ## Step 4: Configure Netlify
 
