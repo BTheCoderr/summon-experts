@@ -51,8 +51,6 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 1.5rem;
-  width: 100%;
-  box-sizing: border-box;
 }
 
 /* Navigation */
@@ -77,90 +75,16 @@ body {
   margin: 0 auto;
 }
 
-.nav-brand .brand-text {
-  font-family: 'Manrope', sans-serif;
-  font-weight: 700;
-  font-size: 1.3rem;
-  background: linear-gradient(135deg, var(--accent-color), #00b894);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-/* Logo Section */
-.logo-section {
-  padding: 5rem 0;
-  text-align: center;
-  background: linear-gradient(135deg, #1a202c 0%, #2d3748 100%);
-  position: relative;
-  overflow: hidden;
-}
-
-.logo-section::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: radial-gradient(circle at center, rgba(0, 212, 170, 0.08) 0%, transparent 60%);
-  pointer-events: none;
-}
-
-.logo-container {
-  background: white;
-  border-radius: 12px;
-  padding: 2.5rem 3rem;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-  display: inline-block;
-  margin: 0 auto;
-  border: 1px solid #e2e8f0;
-  position: relative;
-  z-index: 1;
-  min-width: 300px;
-}
-
-.hero-logo {
-  height: 80px;
+.nav-logo .logo-image {
+  height: 40px;
   width: auto;
+  max-width: 200px;
   object-fit: contain;
-  filter: brightness(1.1) contrast(1.1) saturate(1.1);
   transition: var(--transition);
-  margin: 0 auto 1.5rem auto;
-  display: block;
 }
 
-.hero-logo:hover {
-  transform: scale(1.02);
-  filter: brightness(1.2) contrast(1.2) saturate(1.2);
-}
-
-.brand-text-large {
-  font-family: 'Manrope', sans-serif;
-  font-size: 1.8rem;
-  font-weight: 700;
-  color: #1a202c;
-  margin-bottom: 0.75rem;
-  text-align: center;
-  letter-spacing: -0.025em;
-}
-
-.brand-divider {
-  width: 60px;
-  height: 2px;
-  background: linear-gradient(90deg, #00d4aa, #00b894);
-  margin: 1rem auto;
-  border-radius: 1px;
-}
-
-.brand-tagline {
-  font-size: 0.9rem;
-  color: #64748b;
-  font-style: normal;
-  margin-top: 0.5rem;
-  font-weight: 400;
-  text-align: center;
-  letter-spacing: 0.025em;
+.nav-logo .logo-image:hover {
+  transform: scale(1.05);
 }
 
 /* Keep the old text styling as fallback */
@@ -214,13 +138,11 @@ body {
   top: 100%;
   left: 0;
   right: 0;
-  background: rgba(15, 15, 35, 0.98);
-  backdrop-filter: blur(10px);
+  background: var(--bg-secondary);
   border-top: 1px solid var(--border-color);
-  padding: 1.5rem;
+  padding: 1rem;
   flex-direction: column;
-  gap: 0.75rem;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  gap: 0.5rem;
 }
 
 .mobile-nav-link {
@@ -228,30 +150,26 @@ body {
   border: none;
   color: var(--text-secondary);
   font-size: 1rem;
-  font-weight: 500;
-  padding: 1rem 1.25rem;
+  padding: 0.75rem 1rem;
   text-align: left;
   cursor: pointer;
   transition: var(--transition);
   border-radius: var(--border-radius);
-  border: 1px solid transparent;
 }
 
 .mobile-nav-link:hover {
   background: rgba(0, 212, 170, 0.1);
   color: var(--accent-color);
-  border-color: rgba(0, 212, 170, 0.2);
 }
 
 /* Hero Section */
 .hero-section {
-  min-height: 80vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
   position: relative;
   overflow: hidden;
-  padding: 4rem 0;
 }
 
 .hero-section::before {
@@ -261,9 +179,8 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background: radial-gradient(circle at 20% 80%, rgba(0, 212, 170, 0.15) 0%, transparent 50%),
-              radial-gradient(circle at 80% 20%, rgba(0, 212, 170, 0.1) 0%, transparent 50%),
-              radial-gradient(circle at 50% 50%, rgba(0, 212, 170, 0.05) 0%, transparent 70%);
+  background: radial-gradient(circle at 20% 80%, rgba(0, 212, 170, 0.1) 0%, transparent 50%),
+              radial-gradient(circle at 80% 20%, rgba(0, 212, 170, 0.05) 0%, transparent 50%);
   pointer-events: none;
 }
 
@@ -280,13 +197,11 @@ body {
   font-size: clamp(2.5rem, 5vw, 4rem);
   font-weight: 800;
   line-height: 1.1;
-  margin-bottom: 2rem;
-  background: linear-gradient(135deg, var(--text-primary) 0%, var(--accent-color) 50%, #00b894 100%);
+  margin-bottom: 1.5rem;
+  background: linear-gradient(135deg, var(--text-primary) 0%, var(--accent-color) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-shadow: 0 0 30px rgba(0, 212, 170, 0.3);
-  text-align: center;
 }
 
 .hero-subheadline {
@@ -762,31 +677,6 @@ body {
 }
 
 /* Responsive Design */
-/* Tablet Styles */
-@media (max-width: 1024px) and (min-width: 769px) {
-  .hero-logo {
-    height: 75px;
-  }
-
-  .logo-container {
-    padding: 2.25rem 2.5rem;
-    min-width: 320px;
-  }
-
-  .brand-text-large {
-    font-size: 1.7rem;
-  }
-
-  .logo-section {
-    padding: 4.5rem 0;
-  }
-
-  .hero-section {
-    min-height: 70vh;
-    padding: 3.5rem 0;
-  }
-}
-
 @media (max-width: 768px) {
   .nav-links {
     display: none;
@@ -800,55 +690,9 @@ body {
     display: flex;
   }
 
-  .container {
-    padding: 0 1rem;
-  }
-
-  .hero-logo {
-    height: 65px;
-  }
-
-  .logo-container {
-    padding: 1.75rem 2rem;
-    min-width: 260px;
-    max-width: 90vw;
-  }
-
-  .brand-text-large {
-    font-size: 1.5rem;
-  }
-
-  .brand-divider {
-    width: 55px;
-    margin: 0.75rem auto;
-  }
-
-  .brand-tagline {
-    font-size: 0.85rem;
-  }
-
-  .logo-section {
-    padding: 3.5rem 0;
-  }
-
-  .hero-section {
-    min-height: 65vh;
-    padding: 2.5rem 0;
-  }
-
-  .hero-headline {
-    font-size: clamp(2rem, 4vw, 2.5rem);
-    margin-bottom: 1.5rem;
-  }
-
-  .hero-subheadline {
-    font-size: clamp(1rem, 2.5vw, 1.1rem);
-    margin-bottom: 2rem;
-  }
-
-  .cta-button {
-    padding: 0.875rem 1.5rem;
-    font-size: 1rem;
+  .nav-logo .logo-image {
+    height: 32px;
+    max-width: 150px;
   }
   
   .container {
@@ -896,74 +740,9 @@ body {
 }
 
 @media (max-width: 480px) {
-  .container {
-    padding: 0 0.75rem;
-  }
-
-  .hero-logo {
-    height: 55px;
-  }
-
-  .logo-container {
-    padding: 1.25rem 1.5rem;
-    min-width: 240px;
-    max-width: 95vw;
-    border-radius: 8px;
-  }
-
-  .brand-text-large {
-    font-size: 1.3rem;
-    margin-bottom: 0.5rem;
-  }
-
-  .brand-divider {
-    width: 45px;
-    margin: 0.5rem auto;
-    height: 1.5px;
-  }
-
-  .brand-tagline {
-    font-size: 0.8rem;
-    margin-top: 0.25rem;
-  }
-
-  .logo-section {
-    padding: 2.5rem 0;
-  }
-
-  .hero-section {
-    min-height: 55vh;
-    padding: 2rem 0;
-  }
-
-  .hero-headline {
-    font-size: clamp(1.75rem, 5vw, 2rem);
-    margin-bottom: 1.25rem;
-    line-height: 1.2;
-  }
-
-  .hero-subheadline {
-    font-size: clamp(0.9rem, 3vw, 1rem);
-    margin-bottom: 1.75rem;
-    line-height: 1.5;
-  }
-
-  .cta-button {
-    padding: 0.75rem 1.25rem;
-    font-size: 0.9rem;
-    min-width: 200px;
-  }
-
-  .contact-info {
-    margin-top: 1.5rem;
-  }
-
-  .contact-info p {
-    font-size: 0.85rem;
-  }
-
-  .small-text {
-    font-size: 0.75rem;
+  .nav-logo .logo-image {
+    height: 28px;
+    max-width: 120px;
   }
 
   .hero-headline {

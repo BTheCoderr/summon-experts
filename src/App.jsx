@@ -83,9 +83,18 @@ function App() {
       {/* Navigation */}
       <nav className="navbar">
         <div className="nav-container">
-          <div className="nav-brand">
-            <span className="brand-text">Summon Experts</span>
-          </div>
+          <motion.div 
+            className="nav-logo"
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5 }}
+          >
+            <img 
+              src="/summonExpertsLogo.png" 
+              alt="Summon Experts Logo" 
+              className="logo-image"
+            />
+          </motion.div>
           
           <div className="nav-links">
             {navItems.map((item) => (
@@ -128,27 +137,6 @@ function App() {
         )}
       </nav>
 
-      {/* Logo Section */}
-      <motion.div 
-        className="logo-section"
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, delay: 0.2 }}
-      >
-        <div className="container">
-          <div className="logo-container">
-            <img 
-              src="/summonExpertsLogo.png" 
-              alt="Summon Experts Logo" 
-              className="hero-logo"
-            />
-            <div className="brand-text-large">Summon Experts</div>
-            <div className="brand-divider"></div>
-            <div className="brand-tagline">AI-Powered Business Execution</div>
-          </div>
-        </div>
-      </motion.div>
-
       {/* Hero Section */}
       <section id="hero" className="hero-section">
         <div className="container">
@@ -159,7 +147,7 @@ function App() {
             transition={{ duration: 0.8 }}
           >
             <h1 className="hero-headline">
-              From Idea to First Sales in Under 60 Days
+              From Idea to First Sales — in Under 60 Days
             </h1>
             <p className="hero-subheadline">
               Summon Experts is your AI-powered business execution partner.
