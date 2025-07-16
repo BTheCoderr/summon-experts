@@ -458,7 +458,7 @@ function App() {
             viewport={{ once: true }}
           >
             <h2>Contact Us</h2>
-            <form name="contact" method="POST" data-netlify="true" className="contact-form">
+            <form name="contact" method="POST" data-netlify="true" data-netlify-redirect="/success.html" className="contact-form">
               <input type="hidden" name="form-name" value="contact" />
               <div className="form-row">
                 <input type="text" name="name" placeholder="Your Name" required />
