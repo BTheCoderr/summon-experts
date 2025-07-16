@@ -143,6 +143,7 @@ function App() {
               className="hero-logo"
             />
             <div className="brand-text-large">Summon Experts</div>
+            <div className="brand-divider"></div>
             <div className="brand-tagline">AI-Powered Business Execution</div>
           </div>
         </div>
