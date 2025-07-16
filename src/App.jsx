@@ -63,6 +63,8 @@ function App() {
     scrollToSection('early-offer');
   };
 
+
+
   const navItems = [
     { id: 'what-we-build', label: 'What We Build' },
     { id: 'who-its-for', label: 'Who It\'s For' },
@@ -456,7 +458,7 @@ function App() {
             viewport={{ once: true }}
           >
             <h2>Contact Us</h2>
-            <form name="contact" method="POST" data-netlify="true" className="contact-form" action="/success.html">
+            <form name="contact" method="POST" data-netlify="true" className="contact-form">
               <input type="hidden" name="form-name" value="contact" />
               <div className="form-row">
                 <input type="text" name="name" placeholder="Your Name" required />
