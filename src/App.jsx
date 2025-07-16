@@ -436,7 +436,7 @@ function App() {
                 </button>
                 <div className="contact-method">
                   <Mail size={20} />
-                  <span>Email: <strong>adedirandamola.a@gmail.com</strong> / <strong>bferrell514@gmail.com</strong></span>
+                  <span>Email: <strong>hello@summonexperts.com</strong></span>
                 </div>
                 <p className="small-text">(Again, better to text than call.)</p>
               </div>
@@ -493,7 +493,7 @@ function App() {
                 </div>
                 <div className="contact-link">
                   <Mail size={16} />
-                  <span>adedirandamola.a@gmail.com | bferrell514@gmail.com</span>
+                  <span>hello@summonexperts.com</span>
                 </div>
               </div>
             </div>

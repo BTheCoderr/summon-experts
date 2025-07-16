@@ -20,7 +20,7 @@
   🌐 <a href="https://summonexperts.com">Live Demo</a> •
   📧 <a href="mailto:hello@summonexperts.com">Email Us</a> •
 💬 <a href="#early-offer">Contact Form</a> •
-  ✉️ <a href="mailto:adedirandamola.a@gmail.com">Email</a>
+      ✉️ <a href="mailto:hello@summonexperts.com">Email</a>
 </p>
 
 ---
