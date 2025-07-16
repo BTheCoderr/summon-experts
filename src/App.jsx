@@ -89,7 +89,11 @@ function App() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <span className="logo-text">Summon Experts</span>
+            <img 
+              src="/summonExpertsLogo.png" 
+              alt="Summon Experts Logo" 
+              className="logo-image"
+            />
           </motion.div>
           
           <div className="nav-links">
@@ -480,20 +484,17 @@ function App() {
                 <textarea name="message" placeholder="Your Message" required rows={4}></textarea>
               </div>
               <div className="form-row">
-                <div className="g-recaptcha" data-sitekey="6Lf0olUrAAAAADMWq6cNmTTThsobiZkPVQOQO4rTgO"></div>
-                {/* Fallback for development */}
-                {window.location.hostname === 'localhost' && (
-                  <div style={{ 
-                    background: '#f0f0f0', 
-                    padding: '10px', 
-                    borderRadius: '4px', 
-                    textAlign: 'center',
-                    color: '#666',
-                    fontSize: '14px'
-                  }}>
-                    🔒 reCAPTCHA will appear on production domain
-                  </div>
-                )}
+                {/* reCAPTCHA temporarily disabled - will be re-enabled once properly configured */}
+                <div style={{ 
+                  background: '#f0f0f0', 
+                  padding: '10px', 
+                  borderRadius: '4px', 
+                  textAlign: 'center',
+                  color: '#666',
+                  fontSize: '14px'
+                }}>
+                  🔒 reCAPTCHA protection will be enabled soon
+                </div>
               </div>
               <button type="submit" className="cta-button primary">Send Message</button>
             </form>

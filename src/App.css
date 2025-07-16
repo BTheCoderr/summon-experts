@@ -75,6 +75,18 @@ body {
   margin: 0 auto;
 }
 
+.nav-logo .logo-image {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+  transition: var(--transition);
+}
+
+.nav-logo .logo-image:hover {
+  transform: scale(1.05);
+}
+
+/* Keep the old text styling as fallback */
 .nav-logo .logo-text {
   font-family: 'Manrope', sans-serif;
   font-weight: 700;
@@ -668,13 +680,17 @@ body {
   .nav-links {
     display: none;
   }
-  
+
   .mobile-menu-btn {
     display: block;
   }
-  
+
   .mobile-menu {
     display: flex;
+  }
+
+  .nav-logo .logo-image {
+    height: 32px;
   }
   
   .container {
@@ -722,10 +738,14 @@ body {
 }
 
 @media (max-width: 480px) {
+  .nav-logo .logo-image {
+    height: 28px;
+  }
+
   .hero-headline {
     font-size: 2rem;
   }
-  
+
   .hero-subheadline {
     font-size: 1rem;
   }
