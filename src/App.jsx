@@ -136,11 +136,15 @@ function App() {
         transition={{ duration: 0.8, delay: 0.2 }}
       >
         <div className="container">
-          <img 
-            src="/summonExpertsLogo.png" 
-            alt="Summon Experts Logo" 
-            className="hero-logo"
-          />
+          <div className="logo-container">
+            <img 
+              src="/summonExpertsLogo.png" 
+              alt="Summon Experts Logo" 
+              className="hero-logo"
+            />
+            <div className="brand-text-large">Summon Experts</div>
+            <div className="brand-tagline">AI-Powered Business Execution</div>
+          </div>
         </div>
       </motion.div>
 
