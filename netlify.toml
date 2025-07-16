@@ -6,6 +6,13 @@
   NODE_VERSION = "18"
   NPM_FLAGS = "--no-optional"
 
+# Handle static files first
+[[redirects]]
+  from = "/success.html"
+  to = "/success.html"
+  status = 200
+
+# Handle SPA routing - redirect all other requests to index.html
 [[redirects]]
   from = "/*"
   to = "/index.html"
