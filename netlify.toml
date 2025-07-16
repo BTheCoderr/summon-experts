@@ -6,13 +6,7 @@
   NODE_VERSION = "18"
   NPM_FLAGS = "--no-optional"
 
-# Handle static files first
-[[redirects]]
-  from = "/success.html"
-  to = "/success.html"
-  status = 200
-
-# Handle SPA routing - redirect all other requests to index.html
+# Handle SPA routing - redirect all requests to index.html except static files
 [[redirects]]
   from = "/*"
   to = "/index.html"
@@ -24,4 +18,11 @@
     X-Frame-Options = "DENY"
     X-XSS-Protection = "1; mode=block"
     X-Content-Type-Options = "nosniff"
-    Referrer-Policy = "strict-origin-when-cross-origin" 
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+[[headers]]
+  for = "/success.html"
+  [headers.values]
+    Cache-Control = "no-cache, no-store, must-revalidate"
+    Pragma = "no-cache"
+    Expires = "0" 
