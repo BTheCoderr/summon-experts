@@ -1,0 +1,5 @@
+# Handle form submissions
+/contact  /success.html  200
+
+# Handle SPA routing
+/*    /index.html   200 
