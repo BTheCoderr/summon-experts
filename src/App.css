@@ -834,3 +834,15 @@ body {
   align-self: flex-end;
   margin-top: 1rem;
 }
+
+/* reCAPTCHA styling */
+.g-recaptcha {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+.g-recaptcha > div {
+  transform: scale(0.9);
+  transform-origin: center;
+}

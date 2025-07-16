@@ -477,6 +477,9 @@ function App() {
               <div className="form-row">
                 <textarea name="message" placeholder="Your Message" required rows={4}></textarea>
               </div>
+              <div className="form-row">
+                <div className="g-recaptcha" data-sitekey="6LcXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"></div>
+              </div>
               <button type="submit" className="cta-button primary">Send Message</button>
             </form>
           </motion.div>
