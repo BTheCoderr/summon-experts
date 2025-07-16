@@ -45,6 +45,8 @@ function App() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+
+
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -479,6 +481,19 @@ function App() {
               </div>
               <div className="form-row">
                 <div className="g-recaptcha" data-sitekey="6LdknyUrAAAAAJGCpDJxrlihaveKkpS7WmsWMBt9"></div>
+                {/* Fallback for development */}
+                {window.location.hostname === 'localhost' && (
+                  <div style={{ 
+                    background: '#f0f0f0', 
+                    padding: '10px', 
+                    borderRadius: '4px', 
+                    textAlign: 'center',
+                    color: '#666',
+                    fontSize: '14px'
+                  }}>
+                    🔒 reCAPTCHA will appear on production domain
+                  </div>
+                )}
               </div>
               <button type="submit" className="cta-button primary">Send Message</button>
             </form>
