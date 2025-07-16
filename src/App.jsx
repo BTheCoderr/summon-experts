@@ -59,7 +59,8 @@ function App() {
   };
 
   const handleTextClick = () => {
-    window.open('sms:+18574078886', '_blank');
+    // Open contact form instead of direct SMS
+    scrollToSection('early-offer');
   };
 
   const navItems = [
@@ -151,8 +152,8 @@ function App() {
               Start Your Execution Plan <ArrowRight size={20} />
             </motion.button>
             <div className="contact-info">
-              <p>Prefer to talk? <button className="text-link" onClick={handleTextClick}>Text us anytime at <strong>+1 (857) 407‑8886</strong></button></p>
-              <p className="small-text">(It's better to text than call.)</p>
+              <p>Prefer to talk? <button className="text-link" onClick={handleTextClick}>Get in touch with us</button></p>
+              <p className="small-text">(We'll respond within 24 hours.)</p>
             </div>
           </motion.div>
         </div>

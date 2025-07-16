@@ -18,10 +18,8 @@
 
 <p align="center">
   🌐 <a href="https://summonexperts.com">Live Demo</a> •
-  📱 <a href="sms:+18574078886">Text Us (857-407-8886)</a> •
-  📱 <a href="sms:+14013161280">Text Us (401-316-1280)</a> •
-  📞 <a href="tel:+18574078886">Call (857-407-8886)</a> •
-  📞 <a href="tel:+14013161280">Call (401-316-1280)</a> •
+  📧 <a href="mailto:hello@summonexperts.com">Email Us</a> •
+💬 <a href="#early-offer">Contact Form</a> •
   ✉️ <a href="mailto:adedirandamola.a@gmail.com">Email</a>
 </p>
 
