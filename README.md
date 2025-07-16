@@ -1,6 +1,31 @@
-# Summon Experts 2.0 Landing Page
+# Summon Experts
 
-A modern, responsive landing page for Summon Experts - an AI-powered business execution platform for early-stage entrepreneurs and small business founders.
+<p align="center">
+  <img src="https://summonexperts.com/favicon.svg" alt="Summon Experts Logo" width="64" />
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Next.js-15-black?logo=nextdotjs" />
+  <img src="https://img.shields.io/badge/TypeScript-5-blue?logo=typescript" />
+  <img src="https://img.shields.io/badge/Tailwind_CSS-3.0-38bdf8?logo=tailwindcss" />
+  <img src="https://img.shields.io/badge/Netlify-Deploy-brightgreen?logo=netlify" />
+</p>
+
+<p align="center">
+  <b>A modern, responsive landing page for Summon Experts</b><br/>
+  <i>AI-powered business execution platform for founders & entrepreneurs</i>
+</p>
+
+<p align="center">
+  🌐 <a href="https://summonexperts.com">Live Demo</a> •
+  📱 <a href="sms:+18574078886">Text Us (857-407-8886)</a> •
+  📱 <a href="sms:+14013161280">Text Us (401-316-1280)</a> •
+  📞 <a href="tel:+18574078886">Call (857-407-8886)</a> •
+  📞 <a href="tel:+14013161280">Call (401-316-1280)</a> •
+  ✉️ <a href="mailto:adedirandamola.a@gmail.com">Email</a>
+</p>
+
+---
 
 ## 🚀 Features
 

@@ -429,6 +429,10 @@ function App() {
                   <Phone size={20} />
                   <span>Text us now: <strong>+1 (857) 407‑8886</strong></span>
                 </button>
+                <button className="contact-method" onClick={() => window.open('sms:+14013161280', '_blank')}>
+                  <Phone size={20} />
+                  <span>Text us now: <strong>+1 (401) 316‑1280</strong></span>
+                </button>
                 <div className="contact-method">
                   <Mail size={20} />
                   <span>Email: <strong>adedirandamola.a@gmail.com</strong> / <strong>bferrell514@gmail.com</strong></span>
@@ -436,6 +440,39 @@ function App() {
                 <p className="small-text">(Again, better to text than call.)</p>
               </div>
             </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Contact Form Section */}
+      <section id="contact" className="section">
+        <div className="container">
+          <motion.div 
+            className="section-content"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+          >
+            <h2>Contact Us</h2>
+            <form name="contact" method="POST" data-netlify="true" className="contact-form">
+              <input type="hidden" name="form-name" value="contact" />
+              <div className="form-row">
+                <input type="text" name="name" placeholder="Your Name" required />
+                <input type="email" name="email" placeholder="Your Email" required />
+              </div>
+              <div className="form-row">
+                <input type="text" name="phone" placeholder="Your Phone (optional)" />
+                <input type="text" name="company" placeholder="Company (optional)" />
+              </div>
+              <div className="form-row">
+                <input type="text" name="company_desc" placeholder="What does your company do? (optional)" />
+              </div>
+              <div className="form-row">
+                <textarea name="message" placeholder="Your Message" required rows={4}></textarea>
+              </div>
+              <button type="submit" className="cta-button primary">Send Message</button>
+            </form>
           </motion.div>
         </div>
       </section>
