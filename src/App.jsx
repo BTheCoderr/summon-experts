@@ -147,7 +147,7 @@ function App() {
             transition={{ duration: 0.8 }}
           >
             <h1 className="hero-headline">
-              From Idea to First Sales — in Under 60 Days
+              From Idea to First Sales in Under 60 Days
             </h1>
             <p className="hero-subheadline">
               Summon Experts is your AI-powered business execution partner.
