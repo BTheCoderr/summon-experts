@@ -81,21 +81,28 @@ body {
   max-width: 250px;
   object-fit: contain;
   transition: var(--transition);
+  filter: brightness(1.1) contrast(1.1);
 }
 
 .nav-logo .logo-image:hover {
   transform: scale(1.05);
 }
 
-/* Keep the old text styling as fallback */
 .nav-logo .logo-text {
   font-family: 'Manrope', sans-serif;
-  font-weight: 700;
-  font-size: 1.5rem;
+  font-weight: 800;
+  font-size: 1.4rem;
   background: linear-gradient(135deg, var(--accent-color), #00b894);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  letter-spacing: -0.02em;
+  transition: var(--transition);
+}
+
+.nav-logo .logo-text:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
 }
 
 .nav-links {
@@ -690,9 +697,8 @@ body {
     display: flex;
   }
 
-  .nav-logo .logo-image {
-    height: 42px;
-    max-width: 180px;
+  .nav-logo .logo-text {
+    font-size: 1.2rem;
   }
   
   .container {
@@ -740,9 +746,8 @@ body {
 }
 
 @media (max-width: 480px) {
-  .nav-logo .logo-image {
-    height: 38px;
-    max-width: 150px;
+  .nav-logo .logo-text {
+    font-size: 1.1rem;
   }
 
   .hero-headline {

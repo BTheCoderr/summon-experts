@@ -89,11 +89,7 @@ function App() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <img 
-              src="/summonExpertsLogo.png" 
-              alt="Summon Experts Logo" 
-              className="logo-image"
-            />
+            <div className="logo-text">Summon Experts</div>
           </motion.div>
           
           <div className="nav-links">
