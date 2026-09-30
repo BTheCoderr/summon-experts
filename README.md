@@ -1,5 +1,11 @@
 # Summon Experts
 
+<!-- repo-intro:start -->
+**Project snapshot:** Summon Experts is a responsive marketing site for an AI-powered business execution platform aimed at helping founders move from ideas to structured plans and expert-supported action.
+
+**What it demonstrates:** Next.js/React · TypeScript · conversion-focused landing UX · responsive design · lead capture.
+<!-- repo-intro:end -->
+
 <p align="center">
   <img src="https://summonexperts.com/favicon.svg" alt="Summon Experts Logo" width="64" />
 </p>
